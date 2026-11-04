@@ -1,0 +1,27 @@
+:root { --ink: #17171A; --ink-2: #55534F; --ink-3: #85827C; --paper: #FBFAF7; --line: #ECEAE5; --accent: #E2702B; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --ink: #F3F1ED; --ink-2: #B7B3AC; --ink-3: #8B8881; --paper: #111113; --line: #2A2A2E; --accent: #F08A45; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.serif { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; letter-spacing: -0.02em; }
+.nav { display: flex; align-items: center; justify-content: space-between; max-width: 1080px; margin: 0 auto; padding: 22px max(20px, env(safe-area-inset-left)); }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 600; text-decoration: none; }
+.brand img { width: 28px; height: 28px; border-radius: 7px; }
+.nav nav { display: flex; gap: 22px; font-size: 14.5px; color: var(--ink-2); }
+.nav nav a { text-decoration: none; }
+.hero { position: relative; margin: 0 auto; max-width: 1080px; padding: 0 max(20px, env(safe-area-inset-left)); }
+.hero .pic { border-radius: 24px; overflow: hidden; aspect-ratio: 16 / 8; background: url(/hero.jpg) center / cover; display: flex; align-items: flex-end; }
+.hero .copy { padding: 48px; color: #fff; text-shadow: 0 2px 24px rgba(0,0,0,.25); }
+.hero h1 { font-size: clamp(44px, 7vw, 84px); line-height: 1; margin: 0 0 14px; }
+.hero p { margin: 0; font-size: 18px; max-width: 560px; color: rgba(255,255,255,.92); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 56px max(20px, env(safe-area-inset-left)) 80px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px; margin: 8px 0 40px; }
+.grid h3 { margin: 0 0 6px; font-size: 16px; }
+.grid p, .wrap p, li { margin: 0 0 12px; color: var(--ink-2); }
+h2 { font-size: 20px; margin: 36px 0 8px; letter-spacing: -0.01em; }
+.legal h1 { font-size: 52px; line-height: 1.05; margin: 0 0 6px; }
+.eff { font-size: 13.5px; color: var(--ink-3); }
+.note { border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; }
+footer { border-top: 1px solid var(--line); max-width: 1080px; margin: 0 auto; padding: 24px max(20px, env(safe-area-inset-left)) 48px; display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; font-size: 13.5px; color: var(--ink-3); }
+footer a { text-decoration: none; margin-left: 18px; }
+@media (max-width: 640px) { .hero .copy { padding: 24px; } .hero .pic { aspect-ratio: 4 / 5; } .nav nav { gap: 14px; } }
