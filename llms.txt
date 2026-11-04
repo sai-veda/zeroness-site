@@ -1,0 +1,30 @@
+# Zeroness
+
+> Zeroness is an email app for web and iPhone that works with Gmail and Google Workspace accounts. It reads your email before you do, sorts it into Important, Team, Calendar, News and Other, writes replies for the threads where someone is waiting on you, and puts every action on one key. Made by Applied Crew, Inc. in Oakland, California. Currently in early access.
+
+## Key facts
+- Category: email app, AI email assistant, keyboard-first email, Superhuman alternative.
+- Works with: Gmail and Google Workspace. Outlook is planned.
+- Platforms: web browser and iPhone.
+- Pricing: free for work email (company domains) during launch; Personal $9.99 a month or $30 for the first year at launch; Students $1 a month with a .edu address. Every plan includes every feature, including AI.
+- Privacy: follows the Google API Services User Data Policy (Limited Use). Email is never sold, never used for ads, and never used to train AI models. Zeroness never sends mail without the user pressing Send.
+- Website: https://zeroness.io. Contact: sai@appliedcrew.com.
+
+## What it does
+- Sorting (splits): Important, Team, Calendar, News and Other, decided by AI from the sender and the conversation.
+- Drafted replies: written in the user's voice for threads that need an answer, after checking related mail for decisions already made (contracts signed, vendors chosen, meetings booked).
+- Ask (⌘K): plain-English requests such as "archive every GitHub notification older than a week", shown as a preview before anything changes.
+- Sign-in codes shown at the top of the inbox for ten minutes.
+- Remind me in plain words ("monday 9am"), follow-up nudges after three days without a reply.
+- Finished conversations and past invites move to Done automatically, with one-click undo.
+- AI labels such as pitch, news, receipts and travel, each with a skip-the-inbox switch.
+- One-line summaries of long threads, undo send, multiple accounts, keyboard shortcuts for every action.
+
+## Pages
+- [Home](https://zeroness.io/)
+- [Features](https://zeroness.io/features/)
+- [Zeroness vs Superhuman](https://zeroness.io/superhuman-alternative/)
+- [How to get to inbox zero](https://zeroness.io/inbox-zero/)
+- [Pricing](https://zeroness.io/pricing/)
+- [Privacy policy](https://zeroness.io/privacy/)
+- [Terms](https://zeroness.io/terms/)
