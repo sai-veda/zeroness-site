@@ -3,41 +3,278 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Zeroness: email, at the speed of thought</title>
-<meta name="description" content="Zeroness is a fast, AI-native email client for Gmail. It screens your inbox, drafts replies in your voice when someone is waiting on you, and puts every action a keystroke away.">
+<title>Zeroness: inbox zero, every day</title>
+<meta name="description" content="Zeroness is a Gmail client that sorts your mail, writes the replies people are waiting on, and puts every action one key away. For web and iPhone.">
+<link rel="canonical" href="https://zeroness.io/">
+<meta property="og:title" content="Zeroness: inbox zero, every day">
+<meta property="og:description" content="A Gmail client that sorts your mail, writes the replies people are waiting on, and puts every action one key away.">
+<meta property="og:url" content="https://zeroness.io/">
+<meta property="og:image" content="https://zeroness.io/hero.jpg">
+<meta name="theme-color" content="#FBFAF7">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Instrument+Serif&display=swap">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500;600&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="/home.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<header class="nav">
-  <a class="brand" href="/"><img src="/logo-120.png" alt="">Zeroness</a>
-  <nav><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:sai@appliedcrew.com">Contact</a></nav>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/logo-120.png" alt="">Zeroness</a>
+    <nav aria-label="Site"><a href="#features">Features</a><a href="#privacy">Privacy</a><a href="#pricing">Pricing</a><a class="btn btn-ink" href="mailto:sai@appliedcrew.com?subject=Zeroness%20early%20access" style="height:34px;padding:0 14px;font-size:13.5px">Get early access</a></nav>
+  </div>
 </header>
-<section class="hero">
-  <div class="pic" role="img" aria-label="A still mountain lake at dawn">
-    <div class="copy">
-      <h1 class="serif">Email, at the speed of thought.</h1>
-      <p>Zeroness is a fast, AI-native email client for Gmail. It screens your inbox, drafts replies in your voice when someone is waiting on you, and puts every action a keystroke away.</p>
+
+<main>
+  <section class="hero wrap">
+    <h1 class="serif">Inbox zero, <em>every day.</em></h1>
+    <p class="sub">Zeroness is a Gmail client that sorts your mail, writes the replies people are waiting on, and puts every action one key away.</p>
+    <div class="cta">
+      <a class="btn btn-ink" href="mailto:sai@appliedcrew.com?subject=Zeroness%20early%20access">Get early access</a>
+      <a class="btn btn-quiet" href="#features">See what it does</a>
+    </div>
+    <p class="fine">Web and iPhone · Gmail and Google Workspace</p>
+  </section>
+
+  <div class="stage">
+    <div class="sky">
+      <div class="win" role="img" aria-label="The Zeroness inbox clearing itself one thread at a time">
+        <div class="bar">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <div class="tabs"><span class="on">Important<b id="cnt">7</b></span><span>Team<b>2</b></span><span>Calendar<b>3</b></span><span>News<b>12</b></span><span>Other<b>27</b></span></div>
+          <div class="ask"><span>Ask or search</span><kbd>⌘K</kbd></div>
+        </div>
+        <div class="meta"><span id="need"><b>3 need a reply</b> · 7 in Important</span><div class="code">Vercel code <b>713502</b><i>Copy</i></div></div>
+        <ul class="list" id="list" aria-hidden="true">
+          <div class="hl" id="hl"></div>
+        </ul>
+        <div class="zero" id="zero" aria-hidden="true"><div>That’s everything.<small>7 cleared in 18 seconds</small></div></div>
+        <div class="keyhint" aria-hidden="true"><span class="cap" id="capE">E</span><span id="hintText">Done</span></div>
+      </div>
     </div>
   </div>
-</section>
-<main class="wrap">
-  <div class="grid">
-    <div><h3>Screened for you</h3><p>Important mail, your team, calendar invites, newsletters and receipts each get their own place, so the few threads that need you rise to the top.</p></div>
-    <div><h3>Drafts when they matter</h3><p>When a real person is waiting on you, Zeroness writes the reply from the whole conversation and what you have already decided. You review it and press Send.</p></div>
-    <div><h3>Built for the keyboard</h3><p>E for done, H to come back later, ⌘K to just ask. Actions apply instantly and sync to Gmail behind you.</p></div>
-  </div>
-  <div class="note">
-    <h2 style="margin-top:0">How Zeroness uses your Google data</h2>
-    <p>Zeroness connects to Gmail with your permission to show, search, organize, draft and send your email inside the app. Your address, mail and labels stay in Google, and everything you do in Zeroness shows up in Gmail too. Zeroness never sends mail without your action.</p>
-    <p>Zeroness's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Your data is never sold, never used for advertising and never used to train AI models. Read the full <a href="/privacy/">Privacy Policy</a>.</p>
-  </div>
-  <h2>Availability</h2>
-  <p>Zeroness for web and iPhone is in early access for Gmail and Google Workspace. Pricing: $9.99 a month or $30 a year at launch, free for work email during launch, with a student discount.</p>
+
+  <section class="block wrap" id="features">
+    <span class="kicker rise">What it does</span>
+    <h2 class="serif rise">Most email doesn’t need you.</h2>
+    <p class="lead rise">Zeroness reads every thread before you do and brings forward the few that need an answer, a decision, or a date.</p>
+
+    <div class="trio">
+      <div class="feat rise">
+        <div class="vig v-split" aria-hidden="true">
+          <div class="tabsm" id="stabs"><span class="on">Important</span><span>Team</span><span>News</span><span>Other</span></div>
+          <div id="srows"></div>
+        </div>
+        <div><h3>Sorted before you open it</h3><p>People who need you go to Important. Colleagues, invites, newsletters and receipts each get their own place.</p></div>
+      </div>
+      <div class="feat rise">
+        <div class="vig v-draft" aria-hidden="true">
+          <div class="msg"><b>Northwind Design</b> · Following up on our $8,000 proposal. Are you ready to move ahead?</div>
+          <div class="card"><div class="h">Drafted for you <span>· checked your Halden contract</span></div><div class="typed" id="typed"></div></div>
+        </div>
+        <div><h3>Replies that know what you decided</h3><p>Before it writes, Zeroness checks the rest of your mail: the contract you signed, the vendor you chose, the meeting already booked.</p></div>
+      </div>
+      <div class="feat rise">
+        <div class="vig v-ask" aria-hidden="true">
+          <div class="q"><span class="bar2"></span><span id="askq"></span></div>
+          <div class="plan" id="plan"><small>Zeroness will</small><div>Mark 38 threads Done</div><small>from notifications@github.com</small><br><em>Do it ↵</em></div>
+        </div>
+        <div><h3>Ask in plain words</h3><p>Press ⌘K and say what you want. Zeroness shows exactly what it will change before it changes anything.</p></div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="rise"><h3>Codes at the top</h3><p>A new sign-in code appears above your inbox with Copy, and leaves after ten minutes.</p></div>
+      <div class="rise"><h3>Remind me <span class="k">H</span></h3><p>Type “monday 9am” or “in 2 days”. The thread comes back when you said.</p></div>
+      <div class="rise"><h3>Follow up</h3><p>No reply in three days? The thread asks if you want to nudge, with the note already written.</p></div>
+      <div class="rise"><h3>Finished threads clear themselves</h3><p>A declined refund, an invite for a meeting that has passed, a read receipt. They move to Done, and one click brings them back.</p></div>
+      <div class="rise"><h3>Labels written for you</h3><p>pitch, news, receipts, invoices, travel. Choose which ones skip the inbox entirely.</p></div>
+      <div class="rise"><h3>Long threads in one line</h3><p>Fourteen messages open with who needs what, and by when.</p></div>
+      <div class="rise"><h3>Undo send</h3><p>Every send waits a few seconds, so a typo or the wrong recipient never leaves.</p></div>
+      <div class="rise"><h3>All your accounts</h3><p>Personal Gmail and every Workspace address in one inbox, or one at a time.</p></div>
+      <div class="rise"><h3>iPhone, too</h3><p>The same inbox on your phone. Swipe for Done and Snooze, and send a drafted reply in one tap.</p></div>
+    </div>
+  </section>
+
+  <section class="block wrap">
+    <span class="kicker rise">Keyboard</span>
+    <h2 class="serif rise">Your hands stay where they are.</h2>
+    <p class="lead rise">Every action has a key. ⌘K lists them all, so you learn them as you go.</p>
+    <div class="keys rise" aria-label="Shortcuts">
+      <div class="key"><span class="cap">E</span>Done</div>
+      <div class="key"><span class="cap">H</span>Remind me</div>
+      <div class="key"><span class="cap">R</span>Reply</div>
+      <div class="key"><span class="cap">J</span><span class="cap">K</span>Next and previous</div>
+      <div class="key"><span class="cap">⌘K</span>Ask or run a command</div>
+      <div class="key"><span class="cap">/</span>Search</div>
+      <div class="key"><span class="cap">Z</span>Undo</div>
+    </div>
+
+    <div class="night rise">
+      <div class="in">
+        <div><h2 class="serif">Zero is a place.</h2><p>Clear the last thread and the inbox opens onto a scene for the hour, with how much you got through.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap" id="privacy">
+    <div class="privacy">
+      <div>
+        <span class="kicker rise">Privacy</span>
+        <h2 class="serif rise">Your mail stays yours.</h2>
+        <p class="lead rise">Zeroness works on top of Gmail. Your address, labels and history stay in Google, and everything you do shows up there too.</p>
+      </div>
+      <ul class="rise">
+        <li><b>Never used to train AI</b>Assistant requests go to model providers under terms that forbid training on your data.</li>
+        <li><b>Never sold, never used for ads</b>We follow Google’s Limited Use rules for every byte that comes from Gmail.</li>
+        <li><b>Nothing sends without you</b>Zeroness drafts. You press Send.</li>
+        <li><b>Leave whenever you like</b>Revoke access in your Google account, and we delete what we hold within seven days. <a href="/privacy/">Privacy policy</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block wrap" id="pricing">
+    <span class="kicker rise">Pricing</span>
+    <h2 class="serif rise">Everything included.</h2>
+    <p class="lead rise">Every feature, AI included, on every plan. Launch prices stay the same for as long as you subscribe.</p>
+    <div class="prices">
+      <div class="price rise"><h3>Work email</h3><div class="n">Free</div><p>During launch, for any company domain.</p></div>
+      <div class="price main rise"><h3>Personal</h3><div class="n">$9.99<small> / month</small></div><p>Or $30 for the first year at launch.</p></div>
+      <div class="price rise"><h3>Students</h3><div class="n">$1<small> / month</small></div><p>With a .edu address.</p></div>
+    </div>
+
+    <div class="faq">
+      <details class="rise"><summary>Does it replace Gmail?</summary><p>No. Zeroness is a client for your Gmail or Google Workspace account. Your mail and labels stay in Google, and you can go back to Gmail any time.</p></details>
+      <details class="rise"><summary>Will it send anything on its own?</summary><p>Never. It writes drafts for threads where someone is waiting on you. You read them, change what you like, and press Send.</p></details>
+      <details class="rise"><summary>What happens to mail it clears?</summary><p>It moves to Done, the same as archiving in Gmail. Nothing is deleted, and Done shows what Zeroness cleared with one click to bring it all back.</p></details>
+      <details class="rise"><summary>Outlook?</summary><p>Gmail and Google Workspace first. Outlook is next.</p></details>
+    </div>
+  </section>
+
+  <section class="close wrap">
+    <h2 class="serif rise">Get to zero before your coffee cools.</h2>
+    <a class="btn btn-ink rise" href="mailto:sai@appliedcrew.com?subject=Zeroness%20early%20access">Get early access</a>
+  </section>
 </main>
-<footer><span>© 2026 Applied Crew, Inc. · Zeroness</span><span><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></span></footer>
+
+<footer><div class="wrap"><span>© 2026 Applied Crew, Inc.</span><span><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:sai@appliedcrew.com">Contact</a></span></div></footer>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const nav = document.getElementById('nav');
+  addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 8), { passive: true });
+
+  // Reveal blocks as they scroll in.
+  const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('seen'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.rise').forEach((el) => io.observe(el));
+
+  const lbl = (t, fg, bg) => `<span class="lbl" style="color:${fg};background:${bg}">${t}</span>`;
+
+  // Hero: a real inbox that clears itself, one key at a time.
+  const threads = [
+    ['Stripe', lbl('receipts', '#245C33', '#E3F2E6') + 'Your receipt from Halden Studio', 'Amount paid $49.00', 'OCT 28', false, ''],
+    ['Maya Chen', 'Term sheet: Northwind seed', 'Attached is the revised term sheet with the pro-rata language…', '9:14 AM', true, 'Reply'],
+    ['GitHub', lbl('notifications', '#3A3A40', '#ECECEE') + '[web] Run failed on main', 'Smoke tests failed in 1m 12s', '8:51 AM', false, ''],
+    ['Jordan Lee', 'Pilot results and next steps', 'Clinicians cut chart review time by 38%. Could you send…', '8:47 AM', true, 'Reply'],
+    ['Priya Patel', 'Launch checklist for Thursday', 'Are we still shipping the onboarding flow?', '8:02 AM', true, 'Reply'],
+    ['Every', lbl('news', '#0E4A6E', '#E1F0FA') + 'When software does the job', 'Three teams that handed routine work to agents…', 'NOV 2', false, ''],
+    ['Daniel Kim', 'Intro: Daniel and Sai', 'Would love 30 minutes next week…', '7:40 AM', true, ''],
+  ];
+  const list = document.getElementById('list'), hl = document.getElementById('hl'), zero = document.getElementById('zero');
+  const capE = document.getElementById('capE'), hint = document.getElementById('hintText'), cnt = document.getElementById('cnt'), need = document.getElementById('need');
+  const keys = [['E', 'Done'], ['H', 'Remind me'], ['E', 'Done'], ['R', 'Reply · sent'], ['R', 'Reply · sent'], ['E', 'Done'], ['E', 'Done']];
+  function render() {
+    list.querySelectorAll('.row').forEach((r) => r.remove());
+    threads.forEach((t) => {
+      const li = document.createElement('li');
+      li.className = 'row';
+      li.innerHTML = `<span class="u ${t[4] ? '' : 'off'}"></span><span class="who">${t[0]}</span><span class="what">${t[1]}&nbsp;&nbsp;<i>${t[2]}</i></span>${t[5] ? `<span class="reply">${t[5]}</span>` : ''}<span class="t">${t[3]}</span>`;
+      list.appendChild(li);
+    });
+    hl.style.opacity = 1; hl.style.transform = 'translateY(0)';
+    zero.classList.remove('on');
+    cnt.textContent = threads.length; need.innerHTML = '<b>3 need a reply</b> · 7 in Important';
+  }
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+  async function loop() {
+    render();
+    if (reduce) return;
+    await sleep(1600);
+    for (let i = 0; i < threads.length; i++) {
+      const [k, label] = keys[i];
+      capE.textContent = k; hint.textContent = label;
+      await sleep(520);
+      capE.classList.add('down'); setTimeout(() => capE.classList.remove('down'), 140);
+      const row = list.querySelector('.row');
+      row.classList.add('out');
+      await sleep(230);
+      row.style.height = row.offsetHeight + 'px';
+      row.animate([{ height: row.offsetHeight + 'px' }, { height: '0px' }], { duration: 200, easing: 'cubic-bezier(.2,.8,.2,1)', fill: 'forwards' });
+      await sleep(210);
+      row.remove();
+      const left = threads.length - i - 1;
+      cnt.textContent = left;
+      const replies = Math.max(0, 3 - keys.slice(0, i + 1).filter((x) => x[0] === 'R').length);
+      need.innerHTML = left ? `<b>${replies ? replies + ' need a reply' : 'Nothing needs a reply'}</b> · ${left} in Important` : '<b>Inbox zero</b>';
+      if (!left) { hl.style.opacity = 0; zero.classList.add('on'); }
+      await sleep(620);
+    }
+    hint.textContent = 'Zero'; capE.textContent = '✓';
+    await sleep(3200);
+    loop();
+  }
+  // Only run while the hero is on screen.
+  let started = false;
+  new IntersectionObserver((es) => { if (es[0].isIntersecting && !started) { started = true; loop(); } }, { threshold: .3 }).observe(list);
+  render();
+
+  // Splits vignette: tabs cycle, rows sort themselves.
+  const sets = {
+    Important: [['Jordan Lee', 'Pilot results and next steps'], ['Maya Chen', 'Term sheet: Northwind seed'], ['Priya Patel', 'Launch checklist'], ['Daniel Kim', 'Intro: Daniel and Sai']],
+    Team: [['Sreeja', 'Diaago action items'], ['Ramana', 'Board deck v3, comments by Friday'], ['Aisha', 'Design review moved to 3pm'], ['Leo', 'Q4 hiring plan']],
+    News: [['Every', 'When software does the job'], ['Lenny', 'How the best teams onboard'], ['Stratechery', 'The agent economy'], ['TLDR', 'Daily digest']],
+    Other: [['Stripe', 'Your receipt #2757'], ['GitHub', '3 checks failed on main'], ['Linear', 'Weekly digest'], ['Vercel', 'Deployment ready']],
+  };
+  const stabs = [...document.querySelectorAll('#stabs span')], srows = document.getElementById('srows');
+  let si = 0;
+  const paintSplit = async () => {
+    const name = stabs[si].textContent;
+    stabs.forEach((s, i) => s.classList.toggle('on', i === si));
+    [...srows.children].forEach((r) => r.classList.add('hide'));
+    await sleep(reduce ? 0 : 260);
+    srows.innerHTML = sets[name].map(([w, s]) => `<div class="mrow hide"><b>${w}</b><span>${s}</span></div>`).join('');
+    [...srows.children].forEach((r, i) => setTimeout(() => r.classList.remove('hide'), reduce ? 0 : 60 + i * 70));
+    si = (si + 1) % stabs.length;
+  };
+  paintSplit(); if (!reduce) setInterval(paintSplit, 2600);
+
+  // Draft vignette: the reply types itself, then rests.
+  const typed = document.getElementById('typed');
+  const draft = 'Thanks for following up. We’ve signed with another studio for this project, so we’ll pass for now. I’d be glad to keep you in mind for the next one.';
+  async function type() {
+    typed.textContent = '';
+    if (reduce) { typed.textContent = draft; return; }
+    for (const ch of draft) { typed.textContent += ch; await sleep(24); }
+    await sleep(4200); type();
+  }
+
+  // Ask vignette: the request types, the plan appears.
+  const askq = document.getElementById('askq'), plan = document.getElementById('plan');
+  const q = 'archive every GitHub notification older than a week';
+  async function ask() {
+    askq.textContent = ''; plan.classList.remove('on');
+    if (reduce) { askq.textContent = q; plan.classList.add('on'); return; }
+    await sleep(500);
+    for (const ch of q) { askq.textContent += ch; await sleep(34); }
+    await sleep(380); plan.classList.add('on');
+    await sleep(4200); ask();
+  }
+  const vio = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { (e.target.id === 'typed' ? type : ask)(); vio.unobserve(e.target); } }), { threshold: .5 });
+  vio.observe(typed); vio.observe(askq);
+})();
+</script>
 </body>
 </html>
