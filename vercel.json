@@ -1,0 +1,1 @@
+{ "cleanUrls": false, "trailingSlash": true, "headers": [ { "source": "/logo-120.png", "headers": [ { "key": "Access-Control-Allow-Origin", "value": "*" } ] } ] }
