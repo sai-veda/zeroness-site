@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Superhuman cost calculator: what your team would pay · Zeroness</title>
+<meta name="description" content="Work out what Superhuman costs your team per month and per year on Starter or Business, billed monthly or annually, and compare it with Zeroness.">
+<link rel="canonical" href="https://zeroness.io/superhuman-cost-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zeroness">
+<meta property="og:title" content="Superhuman cost calculator: what your team would pay · Zeroness">
+<meta property="og:description" content="Work out what Superhuman costs your team per month and per year on Starter or Business, billed monthly or annually, and compare it with Zeroness.">
+<meta property="og:url" content="https://zeroness.io/superhuman-cost-calculator/">
+<meta property="og:image" content="https://zeroness.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500;600&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="/home.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Zeroness", "item": "https://zeroness.io/"}, {"@type": "ListItem", "position": 2, "name": "Superhuman cost calculator", "item": "https://zeroness.io/superhuman-cost-calculator/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does Superhuman cost for a team?", "acceptedAnswer": {"@type": "Answer", "text": "Superhuman Mail lists Starter at $25 and Business at $33 per member a month billed annually (about $30 and $40 billed monthly) as of November 2026. A five-person team on Starter billed annually pays $1,500 a year."}}, {"@type": "Question", "name": "How much does Zeroness cost for a team?", "acceptedAnswer": {"@type": "Answer", "text": "Zeroness is free for company domains on Google Workspace during launch. Personal accounts are $9.99 a month. The first 100 users get it free until January 31, 2027, then $5 a month for life."}}]}</script>
+</head>
+<body>
+<header class="nav"><div class="wrap"><a class="brand" href="/"><img src="/logo-120.png" alt="">Zeroness</a><nav aria-label="Site"><a href="/features/">Features</a><a href="/superhuman-alternative/">Compare</a><a href="/pricing/">Pricing</a><a class="btn btn-ink" href="mailto:sai@appliedcrew.com?subject=Zeroness%20early%20access" style="height:34px;padding:0 14px;font-size:13.5px">Get early access</a></nav></div></header>
+<main class="wrap doc">
+
+  <span class="kicker">Calculator</span>
+  <h1 class="serif">What would Superhuman cost your team?</h1>
+  <p class="intro">Pick a team size and plan. Prices are Superhuman's published per-member prices, checked November 5, 2026.</p>
+  <div class="note-box" id="calc">
+    <p><label>Team size <input id="n" type="number" min="1" max="500" value="3" style="width:80px;margin-left:8px;font:inherit;padding:4px 8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)"></label></p>
+    <p><label>Plan <select id="plan" style="margin-left:8px;font:inherit;padding:4px 8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)">
+      <option value="starter_annual">Starter, billed annually</option>
+      <option value="starter_monthly">Starter, billed monthly</option>
+      <option value="business_annual">Business, billed annually</option>
+      <option value="business_monthly">Business, billed monthly</option>
+    </select></label></p>
+    <p style="font-size:20px;color:var(--ink);margin-top:18px"><strong id="out"></strong></p>
+    <p id="out2"></p>
+  </div>
+  <script>
+  (function(){var P={"starter_annual": 25, "starter_monthly": 30, "business_annual": 33, "business_monthly": 40};var n=document.getElementById('n'),pl=document.getElementById('plan'),o=document.getElementById('out'),o2=document.getElementById('out2');
+  function f(x){return '$'+Math.round(x).toLocaleString('en-US')}
+  function run(){var k=Math.max(1,Math.min(500,parseInt(n.value||'1',10)));var m=P[pl.value]*k;o.textContent='Superhuman: '+f(m)+' a month, '+f(m*12)+' a year.';
+  o2.textContent='Zeroness for the same '+k+(k===1?' person':' people')+': free on a company domain during launch, or '+f(9.99*k)+' a month on personal accounts ('+f(5*k)+' for founding users).';}
+  n.addEventListener('input',run);pl.addEventListener('change',run);run();})();
+  </script>
+
+  <h2>How the numbers work</h2>
+  <p>Superhuman charges per member. Billing annually is cheaper per month but is paid up front for the year. Every Zeroness plan includes every feature and all AI, with no per-tier limits.</p>
+  <p>Want the full feature comparison? See <a href="/superhuman-alternative/">Zeroness vs Superhuman</a>.</p>
+
+  <h2>Questions</h2>
+<h3>How much does Superhuman cost for a team?</h3><p>Superhuman Mail lists Starter at $25 and Business at $33 per member a month billed annually (about $30 and $40 billed monthly) as of November 2026. A five-person team on Starter billed annually pays $1,500 a year.</p><h3>How much does Zeroness cost for a team?</h3><p>Zeroness is free for company domains on Google Workspace during launch. Personal accounts are $9.99 a month. The first 100 users get it free until January 31, 2027, then $5 a month for life.</p>
+  <div class="cta-row"><a class="btn btn-ink" href="mailto:sai@appliedcrew.com?subject=Zeroness%20early%20access">Get early access</a><a class="btn btn-quiet" href="/">See it work</a></div>
+</main>
+<footer><div class="wrap"><span>© 2026 Applied Crew, Inc.</span><span><a href="/features/">Features</a><a href="/superhuman-alternative/">Zeroness vs Superhuman</a><a href="/inbox-zero/">Inbox zero guide</a><a href="/gmail-keyboard-shortcuts/">Gmail shortcuts</a><a href="/superhuman-cost-calculator/">Superhuman cost calculator</a><a href="/notion-mail-alternative/">Notion Mail alternative</a><a href="/pricing/">Pricing</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></span></div></footer>
+</body>
+</html>

@@ -30,7 +30,7 @@ HEAD = """<!doctype html>
 FOOT = """
   <div class="cta-row"><a class="btn btn-ink" href="mailto:sai@appliedcrew.com?subject=Zeroness%20early%20access">Get early access</a><a class="btn btn-quiet" href="/">See it work</a></div>
 </main>
-<footer><div class="wrap"><span>© 2026 Applied Crew, Inc.</span><span><a href="/features/">Features</a><a href="/superhuman-alternative/">Zeroness vs Superhuman</a><a href="/inbox-zero/">Inbox zero guide</a><a href="/pricing/">Pricing</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></span></div></footer>
+<footer><div class="wrap"><span>© 2026 Applied Crew, Inc.</span><span><a href="/features/">Features</a><a href="/superhuman-alternative/">Zeroness vs Superhuman</a><a href="/inbox-zero/">Inbox zero guide</a><a href="/gmail-keyboard-shortcuts/">Gmail shortcuts</a><a href="/superhuman-cost-calculator/">Superhuman cost calculator</a><a href="/notion-mail-alternative/">Notion Mail alternative</a><a href="/pricing/">Pricing</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></span></div></footer>
 </body>
 </html>
 """
@@ -263,5 +263,111 @@ page("/notion-mail-alternative/", "Notion Mail alternative: Zeroness for Gmail",
 
   <h2>Questions</h2>
 """ + "".join(f"<h3>{q}</h3><p>{a}</p>" for q, a in nm_faq), [crumbs("Notion Mail alternative", "/notion-mail-alternative/"), faq(nm_faq)])
+
+# ---------- Gmail keyboard shortcuts ----------
+ks_faq = [
+    ("How do I turn on Gmail keyboard shortcuts?", "In Gmail on the web, open Settings (the gear), choose See all settings, find Keyboard shortcuts on the General tab, select Keyboard shortcuts on, and click Save Changes at the bottom."),
+    ("What is the Gmail shortcut to archive an email?", "Press E to archive the open or selected conversation. Press Z right after to undo."),
+    ("Why are my Gmail shortcuts not working?", "Single-key shortcuts only work after you turn them on in Settings, and they are ignored while the cursor is in a text box such as the search bar or a reply. Press Esc to leave the text box first."),
+    ("Are there shortcuts for snoozing in Gmail?", "Yes. Press B to snooze the selected conversation."),
+]
+ks_guide = {"@context": "https://schema.org", "@type": "Article", "headline": "Gmail keyboard shortcuts: the complete cheat sheet", "datePublished": "2026-11-05", "dateModified": "2026-11-05", "author": {"@type": "Person", "name": "Sai Veda"}, "publisher": {"@id": "https://zeroness.io/#org"}, "mainEntityOfPage": "https://zeroness.io/gmail-keyboard-shortcuts/"}
+page("/gmail-keyboard-shortcuts/", "Gmail keyboard shortcuts: the complete cheat sheet (2026) · Zeroness", "Every Gmail keyboard shortcut worth learning, how to turn them on, and the twelve that save the most time. Printable cheat sheet.", """
+  <span class="kicker">Guide</span>
+  <h1 class="serif">Gmail keyboard shortcuts: the cheat sheet.</h1>
+  <p class="intro">Learn twelve keys and you will never reach for the mouse to clear your inbox again. Here is how to turn shortcuts on, the twelve that matter most, and the full list.</p>
+  <p class="meta-line">By Sai Veda · Updated November 5, 2026</p>
+
+  <h2>Turn them on first</h2>
+  <ol>
+    <li>In Gmail on the web, click the gear and choose <strong>See all settings</strong>.</li>
+    <li>On the <strong>General</strong> tab, find <strong>Keyboard shortcuts</strong> and select <strong>Keyboard shortcuts on</strong>.</li>
+    <li>Scroll down and click <strong>Save Changes</strong>.</li>
+  </ol>
+  <p>Press <strong>?</strong> in Gmail at any time to see the list. Shortcuts are ignored while you are typing in a box; press <strong>Esc</strong> first.</p>
+
+  <h2>The twelve that save the most time</h2>
+  <div class="tbl"><table>
+    <tr><th>Key</th><th>What it does</th></tr>
+    <tr><td>E</td><td>Archive the conversation</td></tr>
+    <tr><td>J / K</td><td>Next / previous conversation</td></tr>
+    <tr><td>O or Enter</td><td>Open the conversation</td></tr>
+    <tr><td>U</td><td>Back to the list</td></tr>
+    <tr><td>R</td><td>Reply</td></tr>
+    <tr><td>A</td><td>Reply all</td></tr>
+    <tr><td>F</td><td>Forward</td></tr>
+    <tr><td>C</td><td>Compose</td></tr>
+    <tr><td>⌘ Enter / Ctrl Enter</td><td>Send</td></tr>
+    <tr><td>/</td><td>Search</td></tr>
+    <tr><td>B</td><td>Snooze</td></tr>
+    <tr><td>Z</td><td>Undo the last action</td></tr>
+  </table></div>
+
+  <h2>Selecting and organizing</h2>
+  <div class="tbl"><table>
+    <tr><th>Key</th><th>What it does</th></tr>
+    <tr><td>X</td><td>Select the conversation</td></tr>
+    <tr><td>S</td><td>Star or unstar</td></tr>
+    <tr><td>#</td><td>Move to trash</td></tr>
+    <tr><td>!</td><td>Report spam</td></tr>
+    <tr><td>L</td><td>Label</td></tr>
+    <tr><td>V</td><td>Move to a label</td></tr>
+    <tr><td>Shift + I</td><td>Mark as read</td></tr>
+    <tr><td>Shift + U</td><td>Mark as unread</td></tr>
+    <tr><td>M</td><td>Mute the conversation</td></tr>
+  </table></div>
+
+  <h2>Jumping around</h2>
+  <div class="tbl"><table>
+    <tr><th>Keys</th><th>Goes to</th></tr>
+    <tr><td>G then I</td><td>Inbox</td></tr>
+    <tr><td>G then S</td><td>Starred</td></tr>
+    <tr><td>G then T</td><td>Sent</td></tr>
+    <tr><td>G then D</td><td>Drafts</td></tr>
+    <tr><td>G then A</td><td>All mail</td></tr>
+  </table></div>
+
+  <h2>A faster workflow with the same keys</h2>
+  <p>Shortcuts make each action faster, but you still decide every email one by one. The method that gets people to inbox zero is four decisions: done, reply, remind me later, or waiting on someone. Our <a href="/inbox-zero/">inbox zero guide</a> walks through it.</p>
+  <div class="note-box">Zeroness uses the same muscle memory (E, J, K, R, /, Z) and adds what Gmail leaves to you: the inbox is already sorted into Important, Team, Calendar, News and Other, replies are drafted before you open the thread, and ⌘K takes plain English. <a href="/features/">See every Zeroness shortcut</a>.</div>
+
+  <h2>Questions</h2>
+""" + "".join(f"<h3>{q}</h3><p>{a}</p>" for q, a in ks_faq), [crumbs("Gmail keyboard shortcuts", "/gmail-keyboard-shortcuts/"), ks_guide, faq(ks_faq)], ogtype="article")
+
+# ---------- Superhuman cost calculator ----------
+SH_PRICES = {"starter_annual": 25, "starter_monthly": 30, "business_annual": 33, "business_monthly": 40}
+calc_faq = [
+    ("How much does Superhuman cost for a team?", f"Superhuman Mail lists Starter at ${SH_PRICES['starter_annual']} and Business at ${SH_PRICES['business_annual']} per member a month billed annually (about ${SH_PRICES['starter_monthly']} and ${SH_PRICES['business_monthly']} billed monthly) as of November 2026. A five-person team on Starter billed annually pays ${SH_PRICES['starter_annual']*5*12:,} a year."),
+    ("How much does Zeroness cost for a team?", "Zeroness is free for company domains on Google Workspace during launch. Personal accounts are $9.99 a month. The first 100 users get it free until January 31, 2027, then $5 a month for life."),
+]
+page("/superhuman-cost-calculator/", "Superhuman cost calculator: what your team would pay · Zeroness", "Work out what Superhuman costs your team per month and per year on Starter or Business, billed monthly or annually, and compare it with Zeroness.", """
+  <span class="kicker">Calculator</span>
+  <h1 class="serif">What would Superhuman cost your team?</h1>
+  <p class="intro">Pick a team size and plan. Prices are Superhuman's published per-member prices, checked November 5, 2026.</p>
+  <div class="note-box" id="calc">
+    <p><label>Team size <input id="n" type="number" min="1" max="500" value="3" style="width:80px;margin-left:8px;font:inherit;padding:4px 8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)"></label></p>
+    <p><label>Plan <select id="plan" style="margin-left:8px;font:inherit;padding:4px 8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)">
+      <option value="starter_annual">Starter, billed annually</option>
+      <option value="starter_monthly">Starter, billed monthly</option>
+      <option value="business_annual">Business, billed annually</option>
+      <option value="business_monthly">Business, billed monthly</option>
+    </select></label></p>
+    <p style="font-size:20px;color:var(--ink);margin-top:18px"><strong id="out"></strong></p>
+    <p id="out2"></p>
+  </div>
+  <script>
+  (function(){var P=""" + json.dumps(SH_PRICES) + """;var n=document.getElementById('n'),pl=document.getElementById('plan'),o=document.getElementById('out'),o2=document.getElementById('out2');
+  function f(x){return '$'+Math.round(x).toLocaleString('en-US')}
+  function run(){var k=Math.max(1,Math.min(500,parseInt(n.value||'1',10)));var m=P[pl.value]*k;o.textContent='Superhuman: '+f(m)+' a month, '+f(m*12)+' a year.';
+  o2.textContent='Zeroness for the same '+k+(k===1?' person':' people')+': free on a company domain during launch, or '+f(9.99*k)+' a month on personal accounts ('+f(5*k)+' for founding users).';}
+  n.addEventListener('input',run);pl.addEventListener('change',run);run();})();
+  </script>
+
+  <h2>How the numbers work</h2>
+  <p>Superhuman charges per member. Billing annually is cheaper per month but is paid up front for the year. Every Zeroness plan includes every feature and all AI, with no per-tier limits.</p>
+  <p>Want the full feature comparison? See <a href="/superhuman-alternative/">Zeroness vs Superhuman</a>.</p>
+
+  <h2>Questions</h2>
+""" + "".join(f"<h3>{q}</h3><p>{a}</p>" for q, a in calc_faq), [crumbs("Superhuman cost calculator", "/superhuman-cost-calculator/"), faq(calc_faq)])
 
 print("built")
