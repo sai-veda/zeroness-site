@@ -30,7 +30,7 @@ HEAD = """<!doctype html>
 FOOT = """
   <div class="cta-row"><a class="btn btn-ink" href="mailto:sai@appliedcrew.com?subject=Zeroness%20early%20access">Get early access</a><a class="btn btn-quiet" href="/">See it work</a></div>
 </main>
-<footer><div class="wrap"><span>© 2026 Applied Crew, Inc.</span><span><a href="/features/">Features</a><a href="/superhuman-alternative/">Zeroness vs Superhuman</a><a href="/inbox-zero/">Inbox zero guide</a><a href="/gmail-keyboard-shortcuts/">Gmail shortcuts</a><a href="/superhuman-cost-calculator/">Superhuman cost calculator</a><a href="/notion-mail-alternative/">Notion Mail alternative</a><a href="/pricing/">Pricing</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></span></div></footer>
+<footer><div class="wrap"><span>© 2026 Applied Crew, Inc.</span><span><a href="/features/">Features</a><a href="/superhuman-alternative/">Zeroness vs Superhuman</a><a href="/inbox-zero/">Inbox zero guide</a><a href="/gmail-keyboard-shortcuts/">Gmail shortcuts</a><a href="/best-superhuman-alternatives/">Superhuman alternatives</a><a href="/superhuman-pricing/">Superhuman pricing</a><a href="/superhuman-cost-calculator/">Superhuman cost calculator</a><a href="/notion-mail-alternative/">Notion Mail alternative</a><a href="/pricing/">Pricing</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></span></div></footer>
 </body>
 </html>
 """
@@ -369,5 +369,103 @@ page("/superhuman-cost-calculator/", "Superhuman cost calculator: what your team
 
   <h2>Questions</h2>
 """ + "".join(f"<h3>{q}</h3><p>{a}</p>" for q, a in calc_faq), [crumbs("Superhuman cost calculator", "/superhuman-cost-calculator/"), faq(calc_faq)])
+
+# ---------- Best Superhuman alternatives (2026) ----------
+alt_rows = [
+  # name, price (cheapest paid; tier with AI drafts), providers, platforms, best for
+  ("Zeroness", "$9.99 a month, AI drafts included. Free for work email during launch; first 100 users free until Jan 31, 2027.", "Gmail, Google Workspace", "Web, iPhone", "Gmail users who want Superhuman's speed and AI drafts at a third of the price."),
+  ("Shortwave", "Pro $18 a month (billed monthly). Business $30, Premier $45, Max $120 per seat. Limited free plan.", "Gmail, Google Workspace", "Web, Mac, Windows, iPhone, Android", "Gmail power users who want AI search and AI filters, and can pay for higher tiers."),
+  ("Spark", "Free plan. Plus $10 a month ($8.25 annual). Auto-drafts need Pro, $20 a month ($16.58 annual).", "Gmail, Outlook, iCloud, Yahoo, IMAP", "Mac, Windows, iPhone, Android", "People with many non-Gmail accounts who want a polished free client."),
+  ("Inbox Zero", "App free; AI from $20 a month ($18 annual).", "Gmail, Outlook", "Web, desktop, iPhone", "People who want open source and self-hosting."),
+  ("Fyxer AI", "Free plan with 400 credits. Pro $49 a month ($37 annual).", "Gmail, Outlook", "Works inside Gmail and Outlook", "People who want to keep Gmail or Outlook and add an assistant on top."),
+  ("Missive", "From $18 a month ($14 annual). 30-day trial.", "Gmail, Outlook, IMAP", "Web, Mac, Windows, iPhone, Android", "Teams that share inboxes and need comments and assignment."),
+  ("Gmail with Gemini", "Summaries and prompt-based drafting free; AI inbox triage needs a paid Google AI plan (AI Plus $9.99 a month).", "Gmail", "Web, iPhone, Android", "People who don't want another app."),
+  ("Superhuman Mail (for reference)", "Starter $30 a month ($25 annual). Auto Drafts and Ask AI need Business, $40 a month ($33 annual).", "Gmail, Outlook", "Web, Mac, Windows, iPhone, Android", "Teams that need Outlook, Android or desktop apps and can pay $300-480 a year per person."),
+]
+alt_faq = [
+    ("What is the cheapest Superhuman alternative?", "For a full email app with AI drafts, Zeroness is $9.99 a month with AI on every plan (free for work email during launch). Spark has a free plan but puts auto-drafts on Pro at $20 a month. Gmail itself has free summaries and prompt-based drafting through Gemini."),
+    ("Which Superhuman alternative works only with Gmail?", "Zeroness and Shortwave both focus on Gmail and Google Workspace. Spark, Missive, Fyxer and Inbox Zero also support Outlook."),
+    ("Does Superhuman's cheapest plan include AI drafts?", "No. As of November 2026 Superhuman's Starter plan ($25 a month billed annually, $30 monthly) does not include Auto Drafts or Ask AI; both are on Business ($33 annual, $40 monthly)."),
+    ("What replaced Notion Mail?", "Notion Mail shut down on September 22, 2026 and Notion did not launch a replacement inbox. Former users moved to Gmail apps such as Zeroness, Shortwave and Spark."),
+]
+page("/best-superhuman-alternatives/", "The best Superhuman alternatives in 2026 (compared, with prices) · Zeroness", "Seven Superhuman alternatives compared on price, AI drafts, email providers and platforms, with each vendor's November 2026 prices and who each one is best for.", """
+  <span class="kicker">Compare</span>
+  <h1 class="serif">The best Superhuman alternatives in 2026.</h1>
+  <p class="intro">The short answer: for Gmail users, Zeroness gives you Superhuman's keyboard-first speed and AI drafts for $9.99 a month. If you need Outlook or Android, look at Spark or Missive. If you want to stay in Gmail itself, Gemini covers the basics for free.</p>
+  <p class="meta-line">Last checked November 5, 2026, from each vendor's own pricing page. We make Zeroness, so we have listed what each product does better than ours too.</p>
+
+  <div class="tbl"><table>
+    <tr><th>App</th><th>Price</th><th>Works with</th><th>Platforms</th><th>Best for</th></tr>
+""" + "".join(f"<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td><td>{e}</td></tr>" for a, b, c, d, e in alt_rows) + """
+  </table></div>
+
+  <h2>Why people leave Superhuman</h2>
+  <p>Price, mostly. Superhuman Mail is $25 a month per person billed annually, and the AI that writes replies for you (Auto Drafts) and answers questions about your mail (Ask AI) is only on Business, $33 a month annually or $40 monthly. Since the Grammarly acquisition, the Superhuman suite only includes Mail from Business up. For a three-person startup that is $1,188 to $1,440 a year for email.</p>
+
+  <h2>Zeroness</h2>
+  <p>An email app for Gmail and Google Workspace on web and iPhone. AI sorts every thread into Important, Team, Calendar, News and Other, drafts replies in your voice after checking your other mail for decisions already made, and every action has one key. Every feature is on every plan. <strong>Not yet:</strong> Outlook, Android, Mac and Windows apps, shared team inboxes. <a href="/superhuman-alternative/">Zeroness vs Superhuman in detail</a>.</p>
+
+  <h2>Shortwave</h2>
+  <p>The closest Gmail-only alternative, built around an AI agent you prompt to search, organize and write. Strong AI search across years of mail. Paid plans are billed monthly and the higher tiers are priced per seat. Fully automatic drafting runs through its sister product, Tasklet.</p>
+
+  <h2>Spark</h2>
+  <p>A long-standing cross-platform client with a capable free plan and support for almost any provider, including IMAP. AI auto-drafts and Autopilot are on Pro. We did not find a browser version.</p>
+
+  <h2>Inbox Zero</h2>
+  <p>Open source and self-hostable, with a free email app on web, desktop and iPhone and paid AI plans for categorizing, drafting and a cold-email blocker.</p>
+
+  <h2>Fyxer AI</h2>
+  <p>An assistant that works inside Gmail and Outlook rather than replacing them: drafts in your tone, labels and meeting notes, metered in credits. Sorting starts on Pro.</p>
+
+  <h2>Missive</h2>
+  <p>Built for teams: shared inboxes, comments and assignment across Gmail, Outlook and IMAP, with AI on every plan through credits or your own API key.</p>
+
+  <h2>Gmail with Gemini</h2>
+  <p>Gmail now summarizes threads and drafts from a prompt for free. AI inbox triage needs a paid Google AI plan and is a US, English-only beta. No tier writes drafts before you ask.</p>
+
+  <h2>How we compared</h2>
+  <p>Prices are per user per month in US dollars from each vendor's pricing page on November 5, 2026, with annual-billing prices in brackets. "AI drafts" means replies written before you ask, not writing help you prompt. We will update this page when prices change; email <a href="mailto:sai@appliedcrew.com">sai@appliedcrew.com</a> if something is out of date.</p>
+
+  <h2>Questions</h2>
+""" + "".join(f"<h3>{q}</h3><p>{a}</p>" for q, a in alt_faq), [crumbs("Best Superhuman alternatives", "/best-superhuman-alternatives/"), faq(alt_faq),
+  {"@context": "https://schema.org", "@type": "ItemList", "name": "Superhuman alternatives in 2026", "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": r[0].replace(" (for reference)", "")} for i, r in enumerate(alt_rows[:-1])]}])
+
+# ---------- Superhuman pricing ----------
+shp_faq = [
+    ("How much does Superhuman cost per month?", "Superhuman Mail Starter is $30 a month billed monthly or $25 a month billed annually. Business is $40 monthly or $33 annually. Enterprise pricing is by quote. Prices are per member and checked November 5, 2026."),
+    ("Is there a free version of Superhuman?", "There is no free Superhuman Mail plan. The free Superhuman suite plan covers Grammarly, Docs and Go, not the Mail app."),
+    ("Which Superhuman plan includes AI drafts?", "Auto Drafts, Ask AI, and voice and tone matching are on Business and Enterprise, not Starter."),
+    ("What changed after Grammarly bought Superhuman?", "Grammarly acquired Superhuman Mail and Coda in 2025 and renamed the company Superhuman. The new suite bundles Mail with Grammarly, Docs and Go, and only includes Mail from the Business plan ($33 annual, $40 monthly). The standalone Mail Starter plan is still listed on the Mail plans page."),
+]
+page("/superhuman-pricing/", "Superhuman pricing in 2026: every plan, what's included · Zeroness", "Superhuman Mail costs $25 to $40 per member a month in 2026. Every plan, monthly vs annual prices, which plan includes AI drafts, and what changed with the Grammarly bundle.", """
+  <span class="kicker">Pricing explained</span>
+  <h1 class="serif">Superhuman pricing in 2026.</h1>
+  <p class="intro">Superhuman Mail costs <strong>$30 a month</strong> per person on Starter billed monthly, or <strong>$25</strong> billed annually. The plan with AI-written drafts, Business, is <strong>$40 monthly or $33 annually</strong>. There is no free Mail plan.</p>
+  <p class="meta-line">Checked November 5, 2026 on superhuman.com/plans/mail and superhuman.com/plans. We make Zeroness, a cheaper alternative, and have kept this page to Superhuman's own published facts.</p>
+
+  <div class="tbl"><table>
+    <tr><th>Plan</th><th>Billed monthly</th><th>Billed annually</th><th>AI included</th><th>Seats</th></tr>
+    <tr><td>Starter</td><td>$30 per member</td><td>$25 per member</td><td>Write with AI, Instant Reply, Auto Labels, Auto Summarize, Auto Archive, Split Inbox</td><td>Up to 25</td></tr>
+    <tr><td>Business</td><td>$40 per member</td><td>$33 per member</td><td>Everything in Starter plus Auto Drafts, Ask AI, Voice and Tone Match, Knowledge Base, Mail MCP</td><td>Up to 25</td></tr>
+    <tr><td>Enterprise</td><td colspan="2">By quote</td><td>Everything in Business plus SSO, admin and security controls</td><td>Unlimited</td></tr>
+  </table></div>
+
+  <h2>What a team actually pays</h2>
+  <div class="tbl"><table>
+    <tr><th>Team</th><th>Starter, annual</th><th>Business, annual</th><th>Business, monthly</th></tr>
+    <tr><td>1 person</td><td>$300 a year</td><td>$396 a year</td><td>$480 a year</td></tr>
+    <tr><td>3 people</td><td>$900 a year</td><td>$1,188 a year</td><td>$1,440 a year</td></tr>
+    <tr><td>10 people</td><td>$3,000 a year</td><td>$3,960 a year</td><td>$4,800 a year</td></tr>
+  </table></div>
+  <p>Work out your own number with the <a href="/best-superhuman-alternatives/">Superhuman alternatives</a><a href="/superhuman-pricing/">Superhuman pricing</a><a href="/superhuman-cost-calculator/">Superhuman cost calculator</a>.</p>
+
+  <h2>The two price sheets</h2>
+  <p>Since Grammarly bought Superhuman and took its name, there are two pages. The Mail plans page lists Starter and Business as above. The Superhuman suite page bundles Mail with Grammarly, Docs and Go and only includes Mail from Business up; its $12 to $15 Pro plan includes an Email Assistant that works inside Gmail or Outlook, not the Superhuman Mail app.</p>
+
+  <h2>Cheaper ways to get the same workflow</h2>
+  <p>Zeroness covers the core Superhuman workflow for Gmail and Google Workspace (split inbox, keyboard shortcuts, reminders and AI drafts) for $9.99 a month with AI on every plan, and is free for work email during launch. See <a href="/best-superhuman-alternatives/">all Superhuman alternatives compared</a>.</p>
+
+  <h2>Questions</h2>
+""" + "".join(f"<h3>{q}</h3><p>{a}</p>" for q, a in shp_faq), [crumbs("Superhuman pricing", "/superhuman-pricing/"), faq(shp_faq)])
 
 print("built")
