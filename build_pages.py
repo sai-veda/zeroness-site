@@ -110,7 +110,8 @@ page("/superhuman-alternative/", "Zeroness vs Superhuman: an affordable Superhum
   <span class="kicker">Compare</span>
   <h1 class="serif">Zeroness vs Superhuman.</h1>
   <p class="intro">Superhuman made fast, keyboard-first email a category. Zeroness is built for the same kind of person, costs a third as much, and leans harder on AI that acts on what it reads.</p>
-  <p class="meta-line">Last checked November 4, 2026, from each product's public pages.</p>
+  <p class="meta-line">Last checked November 5, 2026, from each product's public pages.</p>
+  <div class="note-box">The first 100 people to connect get Zeroness free until January 31, 2027, then $5 a month for life. That is $60 a year against Superhuman's $300 to $396 per seat.</div>
 
   <div class="tbl"><table>
     <tr><th></th><th>Zeroness</th><th>Superhuman</th></tr>
@@ -180,6 +181,7 @@ page("/inbox-zero/", "How to get to inbox zero, and stay there · Zeroness", "A 
 
 # ---------- Pricing ----------
 pr_faq = [
+    ("What is the Founding 100?", "The first 100 people to connect an account get Zeroness free until January 31, 2027, then $5 a month for as long as they stay subscribed, half the Personal price. Google limits apps that have not finished its security review to 100 users, so these are the only spots before that review."),
     ("How much does Zeroness cost?", "Zeroness is free for work email on company domains during launch. Personal is $9.99 a month, or $30 for the first year at launch. Students pay $1 a month with a .edu address."),
     ("Is AI included?", "Yes. Every plan includes every feature, including drafts, summaries, Ask and sorting."),
     ("Will my price go up after launch?", "No. Launch prices stay the same for as long as you stay subscribed."),
@@ -189,6 +191,7 @@ page("/pricing/", "Pricing · Zeroness", "Zeroness pricing: free for work email 
   <span class="kicker">Pricing</span>
   <h1 class="serif">Simple pricing. Everything included.</h1>
   <p class="intro">Every plan has every feature, AI included. Launch prices stay the same for as long as you subscribe.</p>
+  <div class="note-box"><strong>Founding 100.</strong> The first 100 people to connect an account get Zeroness free until January 31, 2027, then $5 a month for life. Google lets an app that has not finished its security review onboard 100 users, so these are the only spots until it does. <a href="/connect/">How connecting works</a>.</div>
   <div class="tbl"><table>
     <tr><th>Plan</th><th>Price</th><th>For</th></tr>
     <tr><td>Work email</td><td>Free during launch</td><td>Any company domain on Google Workspace</td></tr>
@@ -197,5 +200,68 @@ page("/pricing/", "Pricing · Zeroness", "Zeroness pricing: free for work email 
   </table></div>
   <h2>Questions</h2>
 """ + "".join(f"<h3>{q}</h3><p>{a}</p>" for q, a in pr_faq), [crumbs("Pricing", "/pricing/"), faq(pr_faq)])
+
+# ---------- Connect (Google warning walkthrough) ----------
+cn_faq = [
+    ("Why does Google say Zeroness is not verified?", "Apps that read Gmail must pass a paid third-party security assessment before Google removes the warning. Zeroness has verified its brand with Google and will complete the assessment after launch. Until then Google shows the warning and limits the app to 100 users."),
+    ("Is my email used to train AI?", "No. Zeroness does not use your mail to train any model, and its AI provider is bound by API terms that prohibit training on your data. The privacy policy has the details."),
+    ("Can I disconnect later?", "Yes. Remove the account in Zeroness, or revoke access at any time at myaccount.google.com/permissions. Your Gmail stays exactly as it was."),
+]
+page("/connect/", "Connecting your Google account · Zeroness", "What to click on Google's 'app not verified' screen when you connect Zeroness, why it appears, and what Zeroness can and cannot do with your mail.", """
+  <span class="kicker">Connect</span>
+  <h1 class="serif">Connecting your Google account.</h1>
+  <p class="intro">It takes about a minute. Google will show one warning screen along the way. Here is what to click, and why it is there.</p>
+
+  <h2>The five steps</h2>
+  <ol>
+    <li>Click <strong>Sign in with Google</strong> and pick your account.</li>
+    <li>Google shows <strong>“Google hasn't verified this app.”</strong></li>
+    <li>Click <strong>Advanced</strong>, at the bottom left of that screen.</li>
+    <li>Click <strong>Go to Zeroness (unsafe)</strong>. “Unsafe” is the label Google puts on every app that has not finished its paid security assessment.</li>
+    <li>Tick the permission boxes and click <strong>Continue</strong>. Your inbox opens and starts sorting.</li>
+  </ol>
+
+  <h2>Why the warning is there</h2>
+  <p>Any app that reads Gmail has to pass a third-party security assessment before Google removes this screen. We have verified our brand with Google and will complete the assessment once our first users tell us Zeroness is worth it. Until then, Google lets us onboard 100 people. Those 100 are the Founding 100: free until January 31, 2027, then $5 a month for life.</p>
+
+  <h2>What Zeroness can do with your account</h2>
+  <ul>
+    <li>Read, sort, label and archive your mail, and send the replies you approve. Nothing sends without you.</li>
+    <li>Read and add calendar events, so drafts know about meetings already booked.</li>
+    <li>Your mail is never sold, never used for ads and never used to train AI models. The <a href="/privacy/">privacy policy</a> lists exactly what is stored and where.</li>
+  </ul>
+
+  <div class="note-box">Stuck on any step? Email <a href="mailto:sai@appliedcrew.com">sai@appliedcrew.com</a>, or <a href="https://cal.com/saiveda/15min">book 15 minutes with Sai</a> and he will set it up with you.</div>
+
+  <h2>Questions</h2>
+""" + "".join(f"<h3>{q}</h3><p>{a}</p>" for q, a in cn_faq), [crumbs("Connect", "/connect/"), faq(cn_faq)])
+
+# ---------- Notion Mail alternative ----------
+nm_faq = [
+    ("Is Zeroness a Notion Mail alternative?", "Yes. Notion Mail shut down on September 22, 2026. Zeroness is an email app for Gmail and Google Workspace with an AI-sorted inbox, keyboard commands and drafted replies, on web and iPhone."),
+    ("Do I need to migrate anything from Notion Mail?", "No. Notion Mail synced with Gmail, so your mail is already in Gmail. Zeroness connects to the same account and sorts it on its own, with no rules to rebuild."),
+    ("How much does Zeroness cost?", "The first 100 users get it free until January 31, 2027, then $5 a month for life. After that, Personal is $9.99 a month and work email is free during launch."),
+]
+page("/notion-mail-alternative/", "Notion Mail alternative: Zeroness for Gmail", "Notion Mail shut down on September 22, 2026. Zeroness is a Gmail app with an inbox that sorts itself, plain-English commands and drafted replies, on web and iPhone.", """
+  <span class="kicker">Notion Mail alternative</span>
+  <h1 class="serif">Notion Mail is gone. Your inbox doesn't have to go back to Gmail.</h1>
+  <p class="intro">Notion Mail shut down on September 22, 2026. If you liked an inbox that organized itself and a command bar for everything, Zeroness does both for Gmail and Google Workspace, on web and iPhone.</p>
+  <p class="meta-line">Last checked November 5, 2026.</p>
+
+  <div class="tbl"><table>
+    <tr><th>What you used in Notion Mail</th><th>In Zeroness</th></tr>
+    <tr><td>Auto labels and views</td><td>Five AI-sorted splits (Important, Team, Calendar, News, Other) plus auto labels like pitch, receipts and invoices. No rules to rebuild.</td></tr>
+    <tr><td>Commands and keyboard</td><td>⌘K in plain English, with a preview before anything changes. E, H, R, J/K for everything else.</td></tr>
+    <tr><td>AI drafts</td><td>Drafts in your voice that search your other mail for decisions already made.</td></tr>
+    <tr><td>Snippets and scheduled send</td><td>Undo send and Remind me in plain words (“monday 9am”). Snippets are not in Zeroness yet.</td></tr>
+    <tr><td>Notion database sync</td><td>Not supported. Zeroness is an email app, not a Notion integration.</td></tr>
+    <tr><td>Price</td><td>Free for the first 100 users until January 31, 2027, then $5 a month for life. No AI credits to buy.</td></tr>
+  </table></div>
+
+  <h2>Switching takes a minute</h2>
+  <p>Notion Mail always synced with Gmail, so every message is already there. Connect the same Google account to Zeroness and it sorts your inbox on the first open. <a href="/connect/">Here is what to click</a>.</p>
+
+  <h2>Questions</h2>
+""" + "".join(f"<h3>{q}</h3><p>{a}</p>" for q, a in nm_faq), [crumbs("Notion Mail alternative", "/notion-mail-alternative/"), faq(nm_faq)])
 
 print("built")
