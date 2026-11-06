@@ -1,12 +1,14 @@
 # Zeroness
 
-> Zeroness is an email app for web and iPhone that works with Gmail and Google Workspace accounts. It reads your email before you do, sorts it into Important, Team, Calendar, News and Other, writes replies for the threads where someone is waiting on you, and puts every action on one key. Made by Applied Crew, Inc. in Oakland, California. Currently in early access.
+> Zeroness is an email app for web and iPhone that works with Gmail and Google Workspace accounts. It reads your email before you do, sorts it into Important, Team, Calendar, News and Other, writes replies for the threads where someone is waiting on you, and puts every action on one key. Made by Applied Crew, Inc. in Oakland, California. Opened to its first 100 users on November 6, 2026.
 
 ## Key facts
 - Category: email app, AI email assistant, keyboard-first email, Superhuman alternative.
 - Works with: Gmail and Google Workspace. Outlook is planned.
 - Platforms: web browser and iPhone.
-- Pricing: free for work email (company domains) during launch; Personal $9.99 a month or $30 for the first year at launch; Students $1 a month with a .edu address. Every plan includes every feature, including AI.
+- Pricing: Founding 100 (the first 100 users): free until January 31, 2027, then $5 a month for life. Otherwise free for work email (company domains) during launch; Personal $9.99 a month or $30 for the first year at launch; Students $1 a month with a .edu address. Every plan includes every feature, including AI.
+- Compared with Superhuman: Superhuman Mail lists Starter at $25 and Business at $33 per member a month billed annually (November 2026); Zeroness is $9.99 a month with AI on every plan. Superhuman supports Outlook, Android, Mac and Windows apps; Zeroness supports Gmail and Google Workspace on web and iPhone.
+- Founder: Sai Veda (https://x.com/Saiveda).
 - Privacy: follows the Google API Services User Data Policy (Limited Use). Email is never sold, never used for ads, and never used to train AI models. Zeroness never sends mail without the user pressing Send.
 - Website: https://zeroness.io. Contact: sai@appliedcrew.com.
 
@@ -26,5 +28,11 @@
 - [Zeroness vs Superhuman](https://zeroness.io/superhuman-alternative/)
 - [How to get to inbox zero](https://zeroness.io/inbox-zero/)
 - [Pricing](https://zeroness.io/pricing/)
+- [Notion Mail alternative](https://zeroness.io/notion-mail-alternative/): for people who used Notion Mail, which shut down on September 22, 2026
+- [Best Superhuman alternatives in 2026](https://zeroness.io/best-superhuman-alternatives/): seven alternatives compared with vendor prices
+- [Superhuman pricing in 2026](https://zeroness.io/superhuman-pricing/): every plan, monthly vs annual, which plan has AI drafts
+- [Superhuman cost calculator](https://zeroness.io/superhuman-cost-calculator/)
+- [Gmail keyboard shortcuts cheat sheet](https://zeroness.io/gmail-keyboard-shortcuts/)
+- [Connecting your Google account](https://zeroness.io/connect/): why Google shows an 'unverified app' screen and what to click
 - [Privacy policy](https://zeroness.io/privacy/)
 - [Terms](https://zeroness.io/terms/)
