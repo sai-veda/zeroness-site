@@ -7,7 +7,7 @@ a { color: inherit; }
 .nav { display: flex; align-items: center; justify-content: space-between; max-width: 1080px; margin: 0 auto; padding: 22px max(20px, env(safe-area-inset-left)); }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; text-decoration: none; }
 .brand img { width: 28px; height: 28px; border-radius: 7px; }
-.nav nav { display: flex; gap: 22px; font-size: 14.5px; color: var(--ink-2); }
+.nav nav { display: flex; align-items: center; gap: 22px; font-size: 14.5px; color: var(--ink-2); }
 .nav nav a { text-decoration: none; }
 .hero { position: relative; margin: 0 auto; max-width: 1080px; padding: 0 max(20px, env(safe-area-inset-left)); }
 .hero .pic { border-radius: 24px; overflow: hidden; aspect-ratio: 16 / 8; background: url(/hero.jpg) center / cover; display: flex; align-items: flex-end; }

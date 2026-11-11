@@ -22,7 +22,7 @@ a { color: inherit; }
 .nav .wrap { display: flex; align-items: center; height: 60px; gap: 28px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 15px; text-decoration: none; letter-spacing: -0.01em; }
 .brand img { width: 26px; height: 26px; border-radius: 7px; }
-.nav nav { display: flex; gap: 24px; font-size: 14px; color: var(--ink-2); margin-left: auto; }
+.nav nav { display: flex; align-items: center; gap: 24px; font-size: 14px; color: var(--ink-2); margin-left: auto; }
 .nav nav a { text-decoration: none; transition: color .2s; }
 .nav nav a:hover { color: var(--ink); }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 40px; padding: 0 18px; border-radius: 999px; border: 0; font: 600 14px var(--f-ui); text-decoration: none; cursor: pointer; transition: transform .25s var(--spring), box-shadow .25s; }
@@ -186,7 +186,7 @@ footer a:hover { color: var(--ink); }
   .stage .sky { padding: 28px 14px 0; border-radius: 20px; }
   .row .who { width: 96px; } .row .what i, .ask span, .tabs span:nth-child(n+3), .keyhint { display: none; }
   .night .in { padding: 28px; }
-  .nav nav a:not(:last-child) { display: none; }
+  .nav nav a:not(:last-child):not(.signin) { display: none; }
 }
 @media (max-width: 600px) { .row .lbl, .row .reply { display: none; } .row .who { width: 92px; } .code { font-size: 11px; } section.block { padding-top: 104px; } .hero { padding-top: 64px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; animation: none !important; } .js .rise:not(.seen) { opacity: 1; transform: none; } }
